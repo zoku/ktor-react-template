@@ -1,7 +1,6 @@
 package de.manuelhelbing
 
 import de.manuelhelbing.plugins.*
-import de.manuelhelbing.routes.frontendRoute
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -16,7 +15,4 @@ fun Application.module() {
     configureHTTP()
     configureSerialization()
     configureRouting()
-
-    // Configure routes
-    frontendRoute()
 }
